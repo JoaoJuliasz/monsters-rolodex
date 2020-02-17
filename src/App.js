@@ -14,7 +14,7 @@ class App extends Component {
   }
   //When reat puts the component in the page, calls all the code we put inside
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => this.setState({ monsters: users }))
   }
